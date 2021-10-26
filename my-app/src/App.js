@@ -1,15 +1,20 @@
 import './App.css';
-
-const name = "xhy";
-const element =  <h1 id="1">Hello, {name}!  {sum(1,2)}  "=====" </h1>;
-function sum(a,b){
-  return a+b;
-}
+import Basic from './component/BasicGrammar/index';
+import List from './component/BasicGrammar/test1';
+import Functional from './component/BasicGrammar/functional';
+import Classcom from './component/BasicGrammar/classcom';
+import Comment  from './component/WebSite/comment';
 
 function App() {
   return (
     <div className="App">
-     {element}
+     {/* <Basic name="hahha1" id="xhy"/> */}
+     {/* <List/> */}
+     {/* <Functional/> */}
+     {/* <Classcom/>
+     <Classcom/>
+     <Classcom/> */}
+     <Comment />
     </div>
   );
 }
