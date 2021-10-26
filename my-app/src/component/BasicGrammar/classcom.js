@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class Classcom extends extends {
+export default class Classcom extends Component {
     constructor (props){
         super(props)
     }
