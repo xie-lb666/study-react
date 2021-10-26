@@ -7,6 +7,7 @@ import Classcom from './component/BasicGrammar/classcom';
 import State from './component/state/state';
 import Clock from './component/state/Clock';
 import Event from './component/event/Event';
+import Ifcom from './component/ifcom/Ifcom';
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
      {/* <Comment /> */}
      {/* <State/> */}
      {/* <Clock state="hhh"/> */}
-     <Event/>
+     {/* <Event/> */}
+     <Ifcom/>
     </div>
   );
 }
