@@ -8,6 +8,7 @@ import State from './component/state/state';
 import Clock from './component/state/Clock';
 import Event from './component/event/Event';
 import Ifcom from './component/ifcom/Ifcom';
+import Text from './component/from/Text';
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
      {/* <State/> */}
      {/* <Clock state="hhh"/> */}
      {/* <Event/> */}
-     <Ifcom/>
+     {/* <Ifcom/> */}
+     <Text/>
     </div>
   );
 }
