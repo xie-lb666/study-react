@@ -6,7 +6,7 @@ import Classcom from './component/BasicGrammar/classcom';
 // import Comment  from './component/WebSite/comment';
 import State from './component/state/state';
 import Clock from './component/state/Clock';
-
+import Event from './component/event/Event';
 
 function App() {
   return (
@@ -19,7 +19,8 @@ function App() {
      <Classcom/> */}
      {/* <Comment /> */}
      {/* <State/> */}
-     <Clock state="hhh"/>
+     {/* <Clock state="hhh"/> */}
+     <Event/>
     </div>
   );
 }
