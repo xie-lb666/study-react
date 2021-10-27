@@ -9,8 +9,11 @@ import Clock from './component/state/Clock';
 import Event from './component/event/Event';
 import Ifcom from './component/ifcom/Ifcom';
 import Text from './component/from/Text';
+import Prop from './component/bilibili/props';
 
 function App() {
+  const p = {name:'谢华勇',sex:'男',age:18};
+  console.log({...p});
   return (
     <div className="App">
      {/* <Basic name="hahha1" id="xhy"/> */}
@@ -24,7 +27,8 @@ function App() {
      {/* <Clock state="hhh"/> */}
      {/* <Event/> */}
      {/* <Ifcom/> */}
-     <Text/>
+     {/* <Text/> */}
+     <Prop name="谢华勇" {...p}/>
     </div>
   );
 }
