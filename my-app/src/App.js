@@ -10,6 +10,7 @@ import Event from './component/event/Event';
 import Ifcom from './component/ifcom/Ifcom';
 import Text from './component/from/Text';
 import Prop from './component/bilibili/props';
+import Refss from './component/bilibili/ref';
 
 function App() {
   const p = {name:'谢华勇',sex:'男',age:18};
@@ -28,7 +29,8 @@ function App() {
      {/* <Event/> */}
      {/* <Ifcom/> */}
      {/* <Text/> */}
-     <Prop name="谢华勇" {...p}/>
+     {/* <Prop name="谢华勇" {...p}/> */}
+     <Refss/>
     </div>
   );
 }
