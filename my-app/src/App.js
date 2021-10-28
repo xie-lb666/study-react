@@ -11,10 +11,11 @@ import Ifcom from './component/ifcom/Ifcom';
 import Text from './component/from/Text';
 import Prop from './component/bilibili/props';
 import Refss from './component/bilibili/ref';
+import ToDoList from './component/ToList/todolist';
 
 function App() {
   const p = {name:'谢华勇',sex:'男',age:18};
-  console.log({...p});
+  // console.log({...p});
   return (
     <div className="App">
      {/* <Basic name="hahha1" id="xhy"/> */}
@@ -30,7 +31,8 @@ function App() {
      {/* <Ifcom/> */}
      {/* <Text/> */}
      {/* <Prop name="谢华勇" {...p}/> */}
-     <Refss/>
+     {/* <Refss/> */}
+     <ToDoList/>
     </div>
   );
 }
