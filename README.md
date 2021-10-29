@@ -6,3 +6,5 @@ cd my-app
 npm start
 
 
+使用路由时：
+注意      <BrowserRouter> 标签 

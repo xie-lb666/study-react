@@ -12,6 +12,10 @@ import Text from './component/from/Text';
 import Prop from './component/bilibili/props';
 import Refss from './component/bilibili/ref';
 import ToDoList from './component/ToList/todolist';
+import About from './pages/About/About';
+import Home from './pages/Home/Home';
+
+import {NavLink,Route,Switch,Redirect} from 'react-router-dom';
 
 function App() {
   const p = {name:'谢华勇',sex:'男',age:18};
@@ -32,7 +36,35 @@ function App() {
      {/* <Text/> */}
      {/* <Prop name="谢华勇" {...p}/> */}
      {/* <Refss/> */}
-     <ToDoList/>
+     {/* <ToDoList/> */}
+     <div className="row">
+					<div className="col-xs-offset-2 col-xs-8">
+						<div className="page-header"><h2>React Router Demo</h2></div>
+					</div>
+				</div>
+				<div className="row">
+					<div className="col-xs-2 col-xs-offset-2">
+						<div className="list-group">
+                <NavLink 
+                to="/about" 
+                className="list-group-item">About</NavLink>
+						  	<NavLink 
+                to="/home"
+                className="list-group-item" >Home</NavLink>
+            </div>
+					</div>
+					<div className="col-xs-6">
+						<div className="panel">
+							<div className="panel-body">
+              <Switch>
+                <Route path="/about" component={About}/>
+                <Route path="/home" component={Home}/>
+                <Redirect to="/about"/>
+              </Switch>
+							</div>
+						</div>
+					</div>
+				</div>
     </div>
   );
 }
